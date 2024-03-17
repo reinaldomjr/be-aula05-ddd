@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  db-be05ddd-pgsql:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: be-05-ddd
